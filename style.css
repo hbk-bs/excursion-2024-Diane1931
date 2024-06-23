@@ -1,38 +1,142 @@
-* {
-  box-sizing: border-box;
-}
-html {
-  font-size: 18px;
-}
+/* Global Styles */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  width: 100vw;
+  box-sizing: border-box;
+  color: #333;
+  line-height: 1.8;
 }
-main {
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+header .container {
   display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-figure {
-  margin: 0;
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  gap: 20px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+header nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
 }
 
-figcaption {
-  font-size: 1.5rem;
-  font-weight: 700;
+header nav a:hover {
+  color: #007BFF;
 }
+
+/* Hero Section Styles */
+.hero {
+  background: url('new-hero-background.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Introduction Section Styles */
+.introduction {
+  display: flex;
+  align-items: flex-start;
+  padding: 60px 0;
+}
+
+.introduction .intro-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.introduction .intro-text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.introduction .intro-text p {
+  font-size: 18px;
+}
+
+.introduction .intro-image {
+  flex: 1;
+   width: 100%;
+  border-radius: 10px;
+}
+
+.introduction .intro-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.introduction .intro-image .image-caption {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.introduction .intro-image .image-row {
+  display: flex;
+  gap: 10px; /* Adjust the gap between images as needed */
+  margin-top: 20px; /* Add some space above the new images */
+}
+
+.introduction .intro-image .image-row img {
+  flex: 1;
+  width: 100%; /* Ensures the images scale to fit their container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+/* Feature Highlights */
+.features {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.features .feature {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.features .feature img {
+  max-width: 400px; /* Adjust as necessary */
+  margin-bottom: 20px;
+}
+
+.features .feature
